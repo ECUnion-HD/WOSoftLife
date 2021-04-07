@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Kingfisher (4.10.1)
+  - MJRefresh (3.5.0)
+  - SnapKit (4.2.0)
+  - SwiftyJSON (5.0.0)
+  - ZCycleView (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - MJRefresh
+  - SnapKit
+  - SwiftyJSON
+  - ZCycleView
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Kingfisher
+    - MJRefresh
+    - SnapKit
+    - SwiftyJSON
+    - ZCycleView
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  ZCycleView: 841b553d238ec97d4442bafacc482e3f36405e86
+
+PODFILE CHECKSUM: 9ad997858647df14f75d41264c2b820c81b5ecf8
+
+COCOAPODS: 1.10.1

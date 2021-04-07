@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85739E05261D9B0C002CE01C /* LSPMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E04261D9B0C002CE01C /* LSPMacros.swift */; };
+		85739E16261D9F40002CE01C /* LSPLaunchModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E15261D9F40002CE01C /* LSPLaunchModuleVC.swift */; };
+		85739E1A261D9F5F002CE01C /* LSPAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E19261D9F5F002CE01C /* LSPAnimationView.swift */; };
+		85739E1D261D9FAD002CE01C /* LSPCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E1C261D9FAD002CE01C /* LSPCircleLayer.swift */; };
+		85739E20261D9FE6002CE01C /* LSPRectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E1F261D9FE6002CE01C /* LSPRectangleLayer.swift */; };
+		85739E23261DA01D002CE01C /* LSPTriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E22261DA01D002CE01C /* LSPTriangleLayer.swift */; };
+		85739E26261DA053002CE01C /* LSPWaveLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E25261DA053002CE01C /* LSPWaveLayer.swift */; };
+		85739E2B261DA165002CE01C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E29261DA165002CE01C /* AppDelegate.swift */; };
+		85739E2C261DA165002CE01C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E2A261DA165002CE01C /* SceneDelegate.swift */; };
+		85739E30261DA1D8002CE01C /* LSPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E2F261DA1D8002CE01C /* LSPExtension.swift */; };
+		85739E34261DA213002CE01C /* LSPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E33261DA213002CE01C /* LSPUtils.swift */; };
+		85739E4B261DA37A002CE01C /* LSPBaseModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E46261DA37A002CE01C /* LSPBaseModuleVC.swift */; };
+		85739E4C261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E47261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift */; };
+		85739E4D261DA37A002CE01C /* LSPNavigationModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E48261DA37A002CE01C /* LSPNavigationModuleVC.swift */; };
+		85739E4E261DA37A002CE01C /* LSPBaseTableModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E49261DA37A002CE01C /* LSPBaseTableModuleVC.swift */; };
+		85739E4F261DA37A002CE01C /* LSPBaseFormModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E4A261DA37A002CE01C /* LSPBaseFormModuleVC.swift */; };
+		85739E52261DA3A9002CE01C /* LSPBaseFormViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E51261DA3A9002CE01C /* LSPBaseFormViewCell.swift */; };
+		85739E55261DA3E3002CE01C /* LSPBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E54261DA3E3002CE01C /* LSPBaseTableViewCell.swift */; };
+		85739E78261DA7D0002CE01C /* LSPHomeModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E77261DA7D0002CE01C /* LSPHomeModuleVC.swift */; };
+		85739E7C261DA82A002CE01C /* LSPBannerCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E7B261DA82A002CE01C /* LSPBannerCycleView.swift */; };
+		85739E7F261DA944002CE01C /* LSPHomeModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E7E261DA944002CE01C /* LSPHomeModuleCell.swift */; };
+		85739E82261DA96E002CE01C /* LSPSectionHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E81261DA96E002CE01C /* LSPSectionHeadView.swift */; };
+		85739E85261DAAB3002CE01C /* LSPMessageModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E84261DAAB3002CE01C /* LSPMessageModuleVC.swift */; };
+		85739E88261DAADE002CE01C /* LSPMessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E87261DAADE002CE01C /* LSPMessageListCell.swift */; };
+		85739E8B261DAB8D002CE01C /* LSPMineModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E8A261DAB8D002CE01C /* LSPMineModuleVC.swift */; };
+		85739E8E261DABB4002CE01C /* LSPIconLeftListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E8D261DABB4002CE01C /* LSPIconLeftListCell.swift */; };
+		85739E91261DABEF002CE01C /* LSPSpringTableHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E90261DABEF002CE01C /* LSPSpringTableHeadView.swift */; };
+		85739E98261DACD5002CE01C /* LSPNewsListIndexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E97261DACD5002CE01C /* LSPNewsListIndexVC.swift */; };
+		85739E9B261DACF4002CE01C /* LSPNewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E9A261DACF4002CE01C /* LSPNewsListCell.swift */; };
+		85CFEA58261D88BF0059E76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CFEA57261D88BF0059E76D /* Assets.xcassets */; };
+		85CFEA5B261D88BF0059E76D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CFEA59261D88BF0059E76D /* LaunchScreen.storyboard */; };
+		E2910BB0A99203077DA6C74C /* Pods_WOSoftLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6151CA1EC0B8FFC2298C2FA9 /* Pods_WOSoftLife.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DE74772276C1AEFE3C8CD1E /* Pods-WOSoftLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOSoftLife.release.xcconfig"; path = "Target Support Files/Pods-WOSoftLife/Pods-WOSoftLife.release.xcconfig"; sourceTree = "<group>"; };
+		6151CA1EC0B8FFC2298C2FA9 /* Pods_WOSoftLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WOSoftLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85739E04261D9B0C002CE01C /* LSPMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPMacros.swift; sourceTree = "<group>"; };
+		85739E15261D9F40002CE01C /* LSPLaunchModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPLaunchModuleVC.swift; sourceTree = "<group>"; };
+		85739E19261D9F5F002CE01C /* LSPAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPAnimationView.swift; sourceTree = "<group>"; };
+		85739E1C261D9FAD002CE01C /* LSPCircleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPCircleLayer.swift; sourceTree = "<group>"; };
+		85739E1F261D9FE6002CE01C /* LSPRectangleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPRectangleLayer.swift; sourceTree = "<group>"; };
+		85739E22261DA01D002CE01C /* LSPTriangleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPTriangleLayer.swift; sourceTree = "<group>"; };
+		85739E25261DA053002CE01C /* LSPWaveLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPWaveLayer.swift; sourceTree = "<group>"; };
+		85739E29261DA165002CE01C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85739E2A261DA165002CE01C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85739E2F261DA1D8002CE01C /* LSPExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPExtension.swift; sourceTree = "<group>"; };
+		85739E33261DA213002CE01C /* LSPUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPUtils.swift; sourceTree = "<group>"; };
+		85739E46261DA37A002CE01C /* LSPBaseModuleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPBaseModuleVC.swift; sourceTree = "<group>"; };
+		85739E47261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPMainTabBarMoudleVC.swift; sourceTree = "<group>"; };
+		85739E48261DA37A002CE01C /* LSPNavigationModuleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPNavigationModuleVC.swift; sourceTree = "<group>"; };
+		85739E49261DA37A002CE01C /* LSPBaseTableModuleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPBaseTableModuleVC.swift; sourceTree = "<group>"; };
+		85739E4A261DA37A002CE01C /* LSPBaseFormModuleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPBaseFormModuleVC.swift; sourceTree = "<group>"; };
+		85739E51261DA3A9002CE01C /* LSPBaseFormViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPBaseFormViewCell.swift; sourceTree = "<group>"; };
+		85739E54261DA3E3002CE01C /* LSPBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPBaseTableViewCell.swift; sourceTree = "<group>"; };
+		85739E77261DA7D0002CE01C /* LSPHomeModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPHomeModuleVC.swift; sourceTree = "<group>"; };
+		85739E7B261DA82A002CE01C /* LSPBannerCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPBannerCycleView.swift; sourceTree = "<group>"; };
+		85739E7E261DA944002CE01C /* LSPHomeModuleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPHomeModuleCell.swift; sourceTree = "<group>"; };
+		85739E81261DA96E002CE01C /* LSPSectionHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPSectionHeadView.swift; sourceTree = "<group>"; };
+		85739E84261DAAB3002CE01C /* LSPMessageModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPMessageModuleVC.swift; sourceTree = "<group>"; };
+		85739E87261DAADE002CE01C /* LSPMessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPMessageListCell.swift; sourceTree = "<group>"; };
+		85739E8A261DAB8D002CE01C /* LSPMineModuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPMineModuleVC.swift; sourceTree = "<group>"; };
+		85739E8D261DABB4002CE01C /* LSPIconLeftListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPIconLeftListCell.swift; sourceTree = "<group>"; };
+		85739E90261DABEF002CE01C /* LSPSpringTableHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPSpringTableHeadView.swift; sourceTree = "<group>"; };
+		85739E97261DACD5002CE01C /* LSPNewsListIndexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPNewsListIndexVC.swift; sourceTree = "<group>"; };
+		85739E9A261DACF4002CE01C /* LSPNewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPNewsListCell.swift; sourceTree = "<group>"; };
+		85CFEA4B261D88BE0059E76D /* WOSoftLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOSoftLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85CFEA57261D88BF0059E76D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85CFEA5A261D88BF0059E76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85CFEA5C261D88BF0059E76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA72D90336A7C582860C7DF0 /* Pods-WOSoftLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WOSoftLife.debug.xcconfig"; path = "Target Support Files/Pods-WOSoftLife/Pods-WOSoftLife.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85CFEA48261D88BE0059E76D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2910BB0A99203077DA6C74C /* Pods_WOSoftLife.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3825CB2FC8AC16A5C9AEFF92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6151CA1EC0B8FFC2298C2FA9 /* Pods_WOSoftLife.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5901443AF4785355554FE716 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA72D90336A7C582860C7DF0 /* Pods-WOSoftLife.debug.xcconfig */,
+				5DE74772276C1AEFE3C8CD1E /* Pods-WOSoftLife.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85739DF1261D98CE002CE01C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				85739E29261DA165002CE01C /* AppDelegate.swift */,
+				85739E2A261DA165002CE01C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		85739DF2261D98EA002CE01C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				85739E45261DA368002CE01C /* View */,
+				85739E44261DA360002CE01C /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		85739DF3261D98FC002CE01C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				85739E6E261DA76E002CE01C /* News */,
+				85739E6D261DA75C002CE01C /* Mine */,
+				85739E6C261DA750002CE01C /* Message */,
+				85739E6B261DA740002CE01C /* Home */,
+				85739E11261D9EFB002CE01C /* Launch */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		85739DF4261D992A002CE01C /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		85739DFE261D9AB6002CE01C /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				85739E2E261DA1B3002CE01C /* Extension */,
+				85739DFF261D9AD2002CE01C /* Macros */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		85739DFF261D9AD2002CE01C /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				85739E04261D9B0C002CE01C /* LSPMacros.swift */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		85739E11261D9EFB002CE01C /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				85739E13261D9F16002CE01C /* View */,
+				85739E12261D9F0B002CE01C /* Controller */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		85739E12261D9F0B002CE01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85739E15261D9F40002CE01C /* LSPLaunchModuleVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85739E13261D9F16002CE01C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85739E19261D9F5F002CE01C /* LSPAnimationView.swift */,
+				85739E1C261D9FAD002CE01C /* LSPCircleLayer.swift */,
+				85739E1F261D9FE6002CE01C /* LSPRectangleLayer.swift */,
+				85739E22261DA01D002CE01C /* LSPTriangleLayer.swift */,
+				85739E25261DA053002CE01C /* LSPWaveLayer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85739E2E261DA1B3002CE01C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				85739E2F261DA1D8002CE01C /* LSPExtension.swift */,
+				85739E33261DA213002CE01C /* LSPUtils.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		85739E44261DA360002CE01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85739E4A261DA37A002CE01C /* LSPBaseFormModuleVC.swift */,
+				85739E46261DA37A002CE01C /* LSPBaseModuleVC.swift */,
+				85739E49261DA37A002CE01C /* LSPBaseTableModuleVC.swift */,
+				85739E47261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift */,
+				85739E48261DA37A002CE01C /* LSPNavigationModuleVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85739E45261DA368002CE01C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85739E51261DA3A9002CE01C /* LSPBaseFormViewCell.swift */,
+				85739E54261DA3E3002CE01C /* LSPBaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85739E6B261DA740002CE01C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				85739E76261DA7A9002CE01C /* Controller */,
+				85739E75261DA7A4002CE01C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		85739E6C261DA750002CE01C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				85739E74261DA79B002CE01C /* Controller */,
+				85739E73261DA797002CE01C /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		85739E6D261DA75C002CE01C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				85739E72261DA790002CE01C /* Controller */,
+				85739E71261DA78B002CE01C /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		85739E6E261DA76E002CE01C /* News */ = {
+			isa = PBXGroup;
+			children = (
+				85739E70261DA783002CE01C /* Controller */,
+				85739E6F261DA77A002CE01C /* View */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		85739E6F261DA77A002CE01C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85739E9A261DACF4002CE01C /* LSPNewsListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85739E70261DA783002CE01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85739E97261DACD5002CE01C /* LSPNewsListIndexVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85739E71261DA78B002CE01C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85739E8D261DABB4002CE01C /* LSPIconLeftListCell.swift */,
+				85739E90261DABEF002CE01C /* LSPSpringTableHeadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85739E72261DA790002CE01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85739E8A261DAB8D002CE01C /* LSPMineModuleVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85739E73261DA797002CE01C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85739E87261DAADE002CE01C /* LSPMessageListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85739E74261DA79B002CE01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85739E84261DAAB3002CE01C /* LSPMessageModuleVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85739E75261DA7A4002CE01C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85739E7B261DA82A002CE01C /* LSPBannerCycleView.swift */,
+				85739E7E261DA944002CE01C /* LSPHomeModuleCell.swift */,
+				85739E81261DA96E002CE01C /* LSPSectionHeadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85739E76261DA7A9002CE01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85739E77261DA7D0002CE01C /* LSPHomeModuleVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85CFEA42261D88BE0059E76D = {
+			isa = PBXGroup;
+			children = (
+				85CFEA4D261D88BE0059E76D /* WOSoftLife */,
+				85CFEA4C261D88BE0059E76D /* Products */,
+				5901443AF4785355554FE716 /* Pods */,
+				3825CB2FC8AC16A5C9AEFF92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85CFEA4C261D88BE0059E76D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85CFEA4B261D88BE0059E76D /* WOSoftLife.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85CFEA4D261D88BE0059E76D /* WOSoftLife */ = {
+			isa = PBXGroup;
+			children = (
+				85739DF1261D98CE002CE01C /* App */,
+				85739DF2261D98EA002CE01C /* Base */,
+				85739DFE261D9AB6002CE01C /* Expand */,
+				85739DF3261D98FC002CE01C /* Modules */,
+				85739DF4261D992A002CE01C /* Vendors */,
+				85CFEA57261D88BF0059E76D /* Assets.xcassets */,
+				85CFEA59261D88BF0059E76D /* LaunchScreen.storyboard */,
+				85CFEA5C261D88BF0059E76D /* Info.plist */,
+			);
+			path = WOSoftLife;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85CFEA4A261D88BE0059E76D /* WOSoftLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85CFEA5F261D88BF0059E76D /* Build configuration list for PBXNativeTarget "WOSoftLife" */;
+			buildPhases = (
+				A0DFDADA388FD3052EB742FF /* [CP] Check Pods Manifest.lock */,
+				85CFEA47261D88BE0059E76D /* Sources */,
+				85CFEA48261D88BE0059E76D /* Frameworks */,
+				85CFEA49261D88BE0059E76D /* Resources */,
+				676DC436118D64AF58CEE26A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WOSoftLife;
+			productName = WOSoftLife;
+			productReference = 85CFEA4B261D88BE0059E76D /* WOSoftLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85CFEA43261D88BE0059E76D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LSP;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "安徽省合肥市软人生信息技术股份有限公司";
+				TargetAttributes = {
+					85CFEA4A261D88BE0059E76D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 85CFEA46261D88BE0059E76D /* Build configuration list for PBXProject "WOSoftLife" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85CFEA42261D88BE0059E76D;
+			productRefGroup = 85CFEA4C261D88BE0059E76D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85CFEA4A261D88BE0059E76D /* WOSoftLife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85CFEA49261D88BE0059E76D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CFEA5B261D88BF0059E76D /* LaunchScreen.storyboard in Resources */,
+				85CFEA58261D88BF0059E76D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		676DC436118D64AF58CEE26A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WOSoftLife/Pods-WOSoftLife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WOSoftLife/Pods-WOSoftLife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WOSoftLife/Pods-WOSoftLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DFDADA388FD3052EB742FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WOSoftLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85CFEA47261D88BE0059E76D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85739E91261DABEF002CE01C /* LSPSpringTableHeadView.swift in Sources */,
+				85739E9B261DACF4002CE01C /* LSPNewsListCell.swift in Sources */,
+				85739E2B261DA165002CE01C /* AppDelegate.swift in Sources */,
+				85739E4D261DA37A002CE01C /* LSPNavigationModuleVC.swift in Sources */,
+				85739E23261DA01D002CE01C /* LSPTriangleLayer.swift in Sources */,
+				85739E88261DAADE002CE01C /* LSPMessageListCell.swift in Sources */,
+				85739E7C261DA82A002CE01C /* LSPBannerCycleView.swift in Sources */,
+				85739E8B261DAB8D002CE01C /* LSPMineModuleVC.swift in Sources */,
+				85739E7F261DA944002CE01C /* LSPHomeModuleCell.swift in Sources */,
+				85739E4C261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift in Sources */,
+				85739E55261DA3E3002CE01C /* LSPBaseTableViewCell.swift in Sources */,
+				85739E4B261DA37A002CE01C /* LSPBaseModuleVC.swift in Sources */,
+				85739E4E261DA37A002CE01C /* LSPBaseTableModuleVC.swift in Sources */,
+				85739E1D261D9FAD002CE01C /* LSPCircleLayer.swift in Sources */,
+				85739E82261DA96E002CE01C /* LSPSectionHeadView.swift in Sources */,
+				85739E16261D9F40002CE01C /* LSPLaunchModuleVC.swift in Sources */,
+				85739E1A261D9F5F002CE01C /* LSPAnimationView.swift in Sources */,
+				85739E98261DACD5002CE01C /* LSPNewsListIndexVC.swift in Sources */,
+				85739E8E261DABB4002CE01C /* LSPIconLeftListCell.swift in Sources */,
+				85739E4F261DA37A002CE01C /* LSPBaseFormModuleVC.swift in Sources */,
+				85739E52261DA3A9002CE01C /* LSPBaseFormViewCell.swift in Sources */,
+				85739E2C261DA165002CE01C /* SceneDelegate.swift in Sources */,
+				85739E78261DA7D0002CE01C /* LSPHomeModuleVC.swift in Sources */,
+				85739E30261DA1D8002CE01C /* LSPExtension.swift in Sources */,
+				85739E85261DAAB3002CE01C /* LSPMessageModuleVC.swift in Sources */,
+				85739E26261DA053002CE01C /* LSPWaveLayer.swift in Sources */,
+				85739E34261DA213002CE01C /* LSPUtils.swift in Sources */,
+				85739E20261D9FE6002CE01C /* LSPRectangleLayer.swift in Sources */,
+				85739E05261D9B0C002CE01C /* LSPMacros.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85CFEA59261D88BF0059E76D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85CFEA5A261D88BF0059E76D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85CFEA5D261D88BF0059E76D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85CFEA5E261D88BF0059E76D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85CFEA60261D88BF0059E76D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA72D90336A7C582860C7DF0 /* Pods-WOSoftLife.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2CSH2FD9B;
+				INFOPLIST_FILE = WOSoftLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wo.lsp.WOSoftLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		85CFEA61261D88BF0059E76D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DE74772276C1AEFE3C8CD1E /* Pods-WOSoftLife.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F2CSH2FD9B;
+				INFOPLIST_FILE = WOSoftLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wo.lsp.WOSoftLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85CFEA46261D88BE0059E76D /* Build configuration list for PBXProject "WOSoftLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85CFEA5D261D88BF0059E76D /* Debug */,
+				85CFEA5E261D88BF0059E76D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85CFEA5F261D88BF0059E76D /* Build configuration list for PBXNativeTarget "WOSoftLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85CFEA60261D88BF0059E76D /* Debug */,
+				85CFEA61261D88BF0059E76D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85CFEA43261D88BE0059E76D /* Project object */;
+}

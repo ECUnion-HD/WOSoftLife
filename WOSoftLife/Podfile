@@ -1,0 +1,19 @@
+platform:ios,'9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'WOSoftLife' do
+	# 网络请求
+  pod 'Alamofire'
+  # 布局
+  pod 'SnapKit'
+  # 网络图片
+  pod 'Kingfisher'
+  # 解析、转换
+  pod 'SwiftyJSON'
+  # 刷新
+  pod 'MJRefresh'
+  # 轮播图
+  pod 'ZCycleView'
+end
