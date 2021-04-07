@@ -139,13 +139,6 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		85739DF4261D992A002CE01C /* Vendors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendors;
-			sourceTree = "<group>";
-		};
 		85739DFE261D9AB6002CE01C /* Expand */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,7 +343,6 @@
 				85739DF2261D98EA002CE01C /* Base */,
 				85739DFE261D9AB6002CE01C /* Expand */,
 				85739DF3261D98FC002CE01C /* Modules */,
-				85739DF4261D992A002CE01C /* Vendors */,
 				85CFEA57261D88BF0059E76D /* Assets.xcassets */,
 				85CFEA59261D88BF0059E76D /* LaunchScreen.storyboard */,
 				85CFEA5C261D88BF0059E76D /* Info.plist */,
