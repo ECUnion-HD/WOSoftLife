@@ -1,7 +1,14 @@
 PODS:
   - Alamofire (4.9.1)
   - Kingfisher (4.10.1)
+  - MBProgressHUD (1.2.0)
   - MJRefresh (3.5.0)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - Result (4.1.0)
   - SnapKit (4.2.0)
   - SwiftyJSON (5.0.0)
   - ZCycleView (1.0.0)
@@ -9,7 +16,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
+  - MBProgressHUD
   - MJRefresh
+  - Moya
   - SnapKit
   - SwiftyJSON
   - ZCycleView
@@ -18,7 +27,10 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Kingfisher
+    - MBProgressHUD
     - MJRefresh
+    - Moya
+    - Result
     - SnapKit
     - SwiftyJSON
     - ZCycleView
@@ -26,11 +38,14 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   ZCycleView: 841b553d238ec97d4442bafacc482e3f36405e86
 
-PODFILE CHECKSUM: 9ad997858647df14f75d41264c2b820c81b5ecf8
+PODFILE CHECKSUM: 064f84c89befaca032e749e6e41e923a4313b5bb
 
 COCOAPODS: 1.10.1

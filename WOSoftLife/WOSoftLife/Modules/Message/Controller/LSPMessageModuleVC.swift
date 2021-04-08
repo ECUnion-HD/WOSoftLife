@@ -15,21 +15,33 @@ class LSPMessageModuleVC: LSPBaseTableModuleVC {
     
     var dataArr: NSMutableArray = NSMutableArray()
     var page: NSInteger!
+    var model: LSPMessage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView?.separatorStyle = .singleLine
+        tableView?.separatorStyle = .singleLine
         self.beginBDRefresh()
+        loadDataByMoya()
     }
 
     func pullDownRefresh() {
         self.page = 1
-        self.queryListData()
+        queryListData()
     }
 
     func pullUpLoadMore() {
-        self.queryListData()
+        queryListData()
+    }
+    
+    // MARK: Moya请求
+    func loadDataByMoya() {
+        LSPNetWork.loadData(target: LSPAPI.rankList, model: LSPMessage.self, success: { model in
+            self.model = model
+//            self.tableView.reloadData()
+            
+        }, failure: nil)
+
     }
     
     // MARK: 数据处理

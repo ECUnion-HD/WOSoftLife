@@ -36,6 +36,13 @@
 		85739E91261DABEF002CE01C /* LSPSpringTableHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E90261DABEF002CE01C /* LSPSpringTableHeadView.swift */; };
 		85739E98261DACD5002CE01C /* LSPNewsListIndexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E97261DACD5002CE01C /* LSPNewsListIndexVC.swift */; };
 		85739E9B261DACF4002CE01C /* LSPNewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E9A261DACF4002CE01C /* LSPNewsListCell.swift */; };
+		85A75F27261EA31300B7A922 /* LSPNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F26261EA31300B7A922 /* LSPNetWork.swift */; };
+		85A75F2A261EA38800B7A922 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F29261EA38800B7A922 /* MoyaConfig.swift */; };
+		85A75F2D261EA48300B7A922 /* LSPHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F2C261EA48300B7A922 /* LSPHud.swift */; };
+		85A75F30261EA4F000B7A922 /* LSPSaveFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F2F261EA4F000B7A922 /* LSPSaveFiles.swift */; };
+		85A75F33261EA54900B7A922 /* LSPAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F32261EA54900B7A922 /* LSPAPI.swift */; };
+		85A75F37261EA61F00B7A922 /* LSPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F36261EA61F00B7A922 /* LSPMessage.swift */; };
+		85A75F3B261EA7B700B7A922 /* LSPBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F3A261EA7B700B7A922 /* LSPBaseModel.swift */; };
 		85CFEA58261D88BF0059E76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CFEA57261D88BF0059E76D /* Assets.xcassets */; };
 		85CFEA5B261D88BF0059E76D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CFEA59261D88BF0059E76D /* LaunchScreen.storyboard */; };
 		E2910BB0A99203077DA6C74C /* Pods_WOSoftLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6151CA1EC0B8FFC2298C2FA9 /* Pods_WOSoftLife.framework */; };
@@ -73,6 +80,13 @@
 		85739E90261DABEF002CE01C /* LSPSpringTableHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPSpringTableHeadView.swift; sourceTree = "<group>"; };
 		85739E97261DACD5002CE01C /* LSPNewsListIndexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPNewsListIndexVC.swift; sourceTree = "<group>"; };
 		85739E9A261DACF4002CE01C /* LSPNewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPNewsListCell.swift; sourceTree = "<group>"; };
+		85A75F26261EA31300B7A922 /* LSPNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPNetWork.swift; sourceTree = "<group>"; };
+		85A75F29261EA38800B7A922 /* MoyaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
+		85A75F2C261EA48300B7A922 /* LSPHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPHud.swift; sourceTree = "<group>"; };
+		85A75F2F261EA4F000B7A922 /* LSPSaveFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPSaveFiles.swift; sourceTree = "<group>"; };
+		85A75F32261EA54900B7A922 /* LSPAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPAPI.swift; sourceTree = "<group>"; };
+		85A75F36261EA61F00B7A922 /* LSPMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPMessage.swift; sourceTree = "<group>"; };
+		85A75F3A261EA7B700B7A922 /* LSPBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPBaseModel.swift; sourceTree = "<group>"; };
 		85CFEA4B261D88BE0059E76D /* WOSoftLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOSoftLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CFEA57261D88BF0059E76D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85CFEA5A261D88BF0059E76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,6 +135,7 @@
 		85739DF2261D98EA002CE01C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				85A75F39261EA7A100B7A922 /* Model */,
 				85739E45261DA368002CE01C /* View */,
 				85739E44261DA360002CE01C /* Controller */,
 			);
@@ -142,6 +157,7 @@
 		85739DFE261D9AB6002CE01C /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				85A75F25261EA2CE00B7A922 /* NetWork */,
 				85739E2E261DA1B3002CE01C /* Extension */,
 				85739DFF261D9AD2002CE01C /* Macros */,
 			);
@@ -152,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				85739E04261D9B0C002CE01C /* LSPMacros.swift */,
+				85A75F32261EA54900B7A922 /* LSPAPI.swift */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -190,6 +207,8 @@
 			children = (
 				85739E2F261DA1D8002CE01C /* LSPExtension.swift */,
 				85739E33261DA213002CE01C /* LSPUtils.swift */,
+				85A75F2C261EA48300B7A922 /* LSPHud.swift */,
+				85A75F2F261EA4F000B7A922 /* LSPSaveFiles.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -227,6 +246,7 @@
 		85739E6C261DA750002CE01C /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				85A75F35261EA60400B7A922 /* Model */,
 				85739E74261DA79B002CE01C /* Controller */,
 				85739E73261DA797002CE01C /* View */,
 			);
@@ -316,6 +336,31 @@
 				85739E77261DA7D0002CE01C /* LSPHomeModuleVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		85A75F25261EA2CE00B7A922 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				85A75F26261EA31300B7A922 /* LSPNetWork.swift */,
+				85A75F29261EA38800B7A922 /* MoyaConfig.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		85A75F35261EA60400B7A922 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85A75F36261EA61F00B7A922 /* LSPMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85A75F39261EA7A100B7A922 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85A75F3A261EA7B700B7A922 /* LSPBaseModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		85CFEA42261D88BE0059E76D = {
@@ -469,9 +514,12 @@
 				85739E9B261DACF4002CE01C /* LSPNewsListCell.swift in Sources */,
 				85739E2B261DA165002CE01C /* AppDelegate.swift in Sources */,
 				85739E4D261DA37A002CE01C /* LSPNavigationModuleVC.swift in Sources */,
+				85A75F30261EA4F000B7A922 /* LSPSaveFiles.swift in Sources */,
 				85739E23261DA01D002CE01C /* LSPTriangleLayer.swift in Sources */,
 				85739E88261DAADE002CE01C /* LSPMessageListCell.swift in Sources */,
 				85739E7C261DA82A002CE01C /* LSPBannerCycleView.swift in Sources */,
+				85A75F3B261EA7B700B7A922 /* LSPBaseModel.swift in Sources */,
+				85A75F2A261EA38800B7A922 /* MoyaConfig.swift in Sources */,
 				85739E8B261DAB8D002CE01C /* LSPMineModuleVC.swift in Sources */,
 				85739E7F261DA944002CE01C /* LSPHomeModuleCell.swift in Sources */,
 				85739E4C261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift in Sources */,
@@ -483,10 +531,14 @@
 				85739E16261D9F40002CE01C /* LSPLaunchModuleVC.swift in Sources */,
 				85739E1A261D9F5F002CE01C /* LSPAnimationView.swift in Sources */,
 				85739E98261DACD5002CE01C /* LSPNewsListIndexVC.swift in Sources */,
+				85A75F37261EA61F00B7A922 /* LSPMessage.swift in Sources */,
 				85739E8E261DABB4002CE01C /* LSPIconLeftListCell.swift in Sources */,
 				85739E4F261DA37A002CE01C /* LSPBaseFormModuleVC.swift in Sources */,
+				85A75F33261EA54900B7A922 /* LSPAPI.swift in Sources */,
 				85739E52261DA3A9002CE01C /* LSPBaseFormViewCell.swift in Sources */,
 				85739E2C261DA165002CE01C /* SceneDelegate.swift in Sources */,
+				85A75F2D261EA48300B7A922 /* LSPHud.swift in Sources */,
+				85A75F27261EA31300B7A922 /* LSPNetWork.swift in Sources */,
 				85739E78261DA7D0002CE01C /* LSPHomeModuleVC.swift in Sources */,
 				85739E30261DA1D8002CE01C /* LSPExtension.swift in Sources */,
 				85739E85261DAAB3002CE01C /* LSPMessageModuleVC.swift in Sources */,

@@ -42,6 +42,7 @@ class LSPBaseTableViewCell: UITableViewCell {
     func basicStyle() {
         self.cellHeight  = 55
         self.height = self.cellHeight
+        self.selectionStyle = .none
     }
     
     /// 创建视图
