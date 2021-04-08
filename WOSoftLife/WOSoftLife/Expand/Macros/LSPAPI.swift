@@ -2,7 +2,7 @@
 //  LSPAPI.swift
 //  WOSoftLife
 //
-//  Created by Liu Chuanyong on 2021/4/8.
+//  Created by 欧盟🇪🇺委员会 on 2021/4/8.
 //  Copyright © 2021 安徽省合肥市软人生信息技术股份有限公司. All rights reserved.
 //
 

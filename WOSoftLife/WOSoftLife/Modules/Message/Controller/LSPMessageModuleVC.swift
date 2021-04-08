@@ -22,7 +22,6 @@ class LSPMessageModuleVC: LSPBaseTableModuleVC {
 
         tableView?.separatorStyle = .singleLine
         self.beginBDRefresh()
-        loadDataByMoya()
     }
 
     func pullDownRefresh() {
