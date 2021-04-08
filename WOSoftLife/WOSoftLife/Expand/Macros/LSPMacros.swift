@@ -108,13 +108,13 @@ public func TextA4Color() -> UIColor {
     return LSPColor_Hex(h: 0xa4afbc)
 }
 
-// MARK:单例
+// MARK: - 单例
 public let LSPKeyWindow = UIApplication.shared.keyWindow
 public let LSPAppdelegate = UIApplication.shared.delegate
 public let LSPUserDefaults = UserDefaults.standard
 public let LSPNotiCenter:NotificationCenter = NotificationCenter.default
 
-// MARK: debug打印
+// MARK: - debug打印
 public func LSPLog<T>(_ message : T ,file : String = #file,function : String = #function, line : Int = #line){
     #if DEBUG
     let str1 = (file as NSString).lastPathComponent
@@ -125,45 +125,10 @@ public func LSPLog<T>(_ message : T ,file : String = #file,function : String = #
     #endif
 }
 
-extension String {
-    /// 将十六进制颜色转伟UIColor
-    /// - Returns: UIColor
-    public func toUIColor() -> UIColor {
-        //处理数值
-        var cString = self.uppercased().trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-        
-        let length = (cString as NSString).length
-        // 错误处理
-        if (length < 6 || length > 7 || (!cString.hasPrefix("#") && length == 7)){
-            return UIColor.white
-        }
-        
-        if cString.hasPrefix("#"){
-            cString = (cString as NSString).substring(from: 1)
-        }
-        
-        // 字符chuan截取
-        var range = NSRange()
-        range.location = 0
-        range.length = 2
-        
-        let rString = (cString as NSString).substring(with: range)
-        
-        range.location = 2
-        let gString = (cString as NSString).substring(with: range)
-        
-        range.location = 4
-        let bString = (cString as NSString).substring(with: range)
-        
-        // 存储转换后的数值
-        var r:UInt32 = 0,g:UInt32 = 0,b:UInt32 = 0
-        // 进行转换
-        Scanner(string: rString).scanHexInt32(&r)
-        Scanner(string: gString).scanHexInt32(&g)
-        Scanner(string: bString).scanHexInt32(&b)
-        // 根据颜色值创建UIColor
-        return UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1.0)
-    }
+// MARK: - 打开APP权限设置
+public func openSettings() {
+    guard let url = URL(string: UIApplication.openSettingsURLString) else { return }
+    UIApplication.shared.open(url, options: [:])
 }
 
 // MARK: 代理

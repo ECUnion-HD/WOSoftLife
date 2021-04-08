@@ -349,8 +349,17 @@ extension Dictionary {
     
 }
 
-//MARK: String扩展
+//MARK: - String扩展
 extension String {
+    
+    /// 字符串判空
+    var isBlank: Bool {
+        let trimmStr = self.trimmingCharacters(in: .whitespacesAndNewlines)
+        if trimmStr.isEmpty || trimmStr == "<null>" || trimmStr == "<NSNull>" || trimmStr == "(null)" || trimmStr == "null" {
+            return true
+        }
+        return false
+    }
     
     /// String使用下标截取字符串
     /// 例: "示例字符串"[0..<2] 结果是 "示例"
@@ -360,6 +369,45 @@ extension String {
             let endIndex = self.index(self.startIndex, offsetBy: r.upperBound)
             return String(self[startIndex..<endIndex])
         }
+    }
+    
+    /// 将十六进制颜色转伟UIColor
+    /// - Returns: UIColor
+    public func toUIColor() -> UIColor {
+        // 处理数值
+        var cString = self.uppercased().trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        
+        let length = (cString as NSString).length
+        // 错误处理
+        if (length < 6 || length > 7 || (!cString.hasPrefix("#") && length == 7)){
+            return UIColor.white
+        }
+        
+        if cString.hasPrefix("#"){
+            cString = (cString as NSString).substring(from: 1)
+        }
+        
+        // 字符chuan截取
+        var range = NSRange()
+        range.location = 0
+        range.length = 2
+        
+        let rString = (cString as NSString).substring(with: range)
+        
+        range.location = 2
+        let gString = (cString as NSString).substring(with: range)
+        
+        range.location = 4
+        let bString = (cString as NSString).substring(with: range)
+        
+        // 存储转换后的数值
+        var r:UInt32 = 0,g:UInt32 = 0,b:UInt32 = 0
+        // 进行转换
+        Scanner(string: rString).scanHexInt32(&r)
+        Scanner(string: gString).scanHexInt32(&g)
+        Scanner(string: bString).scanHexInt32(&b)
+        // 根据颜色值创建UIColor
+        return UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1.0)
     }
     
     /// MD5加密
@@ -377,8 +425,37 @@ extension String {
         return String(hash)
     }
     
+    /// 时间戳转成字符串
+    public func timeIntervalToTimeStr(timeInterval: Double, _ dateFormat: String) -> String {
+        let date:Date = Date.init(timeIntervalSince1970: timeInterval)
+        let formatter = DateFormatter.init()
+        if dateFormat.isBlank {
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        } else {
+            formatter.dateFormat = dateFormat
+        }
+        return formatter.string(from: date as Date)
+    }
+    
+    /// 字符串转成时间戳
+    public func timeStrToTimeInterval(_ dateFormat: String) -> String {
+        if self.isBlank {
+            return ""
+        }
+        let format = DateFormatter.init()
+        format.dateStyle = .medium
+        format.timeStyle = .short
+        if dateFormat.isBlank {
+            format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        } else {
+            format.dateFormat = dateFormat
+        }
+        let date = format.date(from: self)
+        return String(date!.timeIntervalSince1970)
+    }
+    
     /// 时间转换星期
-    static func getWeekDayFormDate(_ time: Int) -> String {
+    public func getWeekDayFormDate(_ time: Int) -> String {
         let weekday: NSArray = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"] as NSArray
         let date = Date(timeIntervalSince1970: TimeInterval(time))
         let calendar = Calendar(identifier: .republicOfChina)
@@ -388,7 +465,7 @@ extension String {
     }
     
     /// 金额单位转换
-    static func calculatePriceUnit(_ price: Double) -> NSString{
+    public func calculatePriceUnit(_ price: Double) -> NSString{
         let array = ["元","万元","亿元","万亿元"]
         var tempPrice = 0.0
         for i in 0..<array.count{
@@ -403,7 +480,7 @@ extension String {
     }
     
     /// 将字节(byte单位转换)
-    static func transformSize(_ size: Double) -> String {
+    public func transformSize(_ size: Double) -> String {
         var newSize: Double = 0
         // 小于1024byte
         if 0 < size && size < 1024 {
@@ -425,7 +502,7 @@ extension String {
     }
     
     /// 对象方法 (获取文件大小)
-    func getFileSize() -> UInt64  {
+    public func getFileSize() -> UInt64  {
         var size: UInt64 = 0
         let fileManager = FileManager.default
         var isDir: ObjCBool = false

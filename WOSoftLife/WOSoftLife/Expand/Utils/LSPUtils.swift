@@ -2,17 +2,25 @@
 //  LSPUtils.swift
 //  WOSoftLife
 //
-//  Created by 欧盟🇪🇺委员会 on 2021/4/7.
+//  Created by Liu Chuanyong on 2021/4/8.
 //  Copyright © 2021 安徽省合肥市软人生信息技术股份有限公司. All rights reserved.
-//
-//  让我们一起写虫子吧！
-//  Let's write bugs together!
 //
 
 import UIKit
+import UIKit
+import AVFoundation
+import UserNotifications
+import Photos
+import MapKit
+import EventKit
+import Contacts
+import Speech
+import MediaPlayer
+import HealthKit
+import CoreMotion
 
 class LSPUtils: NSObject {
-    
+
     // MARK: 文本计算方法
      /// 计算文字大小
      /// - Parameters:
@@ -66,5 +74,53 @@ class LSPUtils: NSObject {
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         return (label.text?.boundingRect(with: CGSize(width: width, height: 1000), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font : label.font!], context: nil).height)!
      }
-     
+    
+    enum LSPPermissionType: Int {
+        /// 相机
+        case camera = 0
+        /// 相册
+        case photoLibrary = 1
+        /// 推送
+        case notification = 2
+        /// 麦克风
+        case microphone = 3
+        /// 定位
+        case location = 4
+    }
+    /// 是否允许权限
+    class func isAllowed(_ permission: LSPPermissionType) -> Bool {
+        let manager = getManagerForPermission(permission)
+        return manager.isAuthorized
+    }
+    /// 是否拒绝权限
+    class func isDenied(_ permission: LSPPermissionType) -> Bool {
+        let manager = getManagerForPermission(permission)
+        return manager.isDenied
+    }
+    /// 请求权限
+    class func request(_ permission: LSPPermissionType, with сompletionCallback: ((LSPAuthorizationStatus)->())?) {
+        let manager = getManagerForPermission(permission)
+        manager.request { (status) in
+            DispatchQueue.main.async {
+                сompletionCallback?(status)
+            }
+        }
+    }
+}
+
+extension LSPUtils {
+    private class func getManagerForPermission(_ permission: LSPPermissionType) -> LSPPermissionInterface {
+        switch permission {
+        case .camera:
+            return LSPCameraPermission()
+        case .photoLibrary:
+            return LSPPhotoLibraryPermission()
+        case .notification:
+            return LSPNotificationPermission()
+        case .microphone:
+            return LSPMicrophonePermission()
+        case .location:
+            return LSPLocationPermission()
+        }
+    }
 }

@@ -17,7 +17,6 @@
 		85739E2B261DA165002CE01C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E29261DA165002CE01C /* AppDelegate.swift */; };
 		85739E2C261DA165002CE01C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E2A261DA165002CE01C /* SceneDelegate.swift */; };
 		85739E30261DA1D8002CE01C /* LSPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E2F261DA1D8002CE01C /* LSPExtension.swift */; };
-		85739E34261DA213002CE01C /* LSPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E33261DA213002CE01C /* LSPUtils.swift */; };
 		85739E4B261DA37A002CE01C /* LSPBaseModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E46261DA37A002CE01C /* LSPBaseModuleVC.swift */; };
 		85739E4C261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E47261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift */; };
 		85739E4D261DA37A002CE01C /* LSPNavigationModuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E48261DA37A002CE01C /* LSPNavigationModuleVC.swift */; };
@@ -43,6 +42,8 @@
 		85A75F33261EA54900B7A922 /* LSPAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F32261EA54900B7A922 /* LSPAPI.swift */; };
 		85A75F37261EA61F00B7A922 /* LSPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F36261EA61F00B7A922 /* LSPMessage.swift */; };
 		85A75F3B261EA7B700B7A922 /* LSPBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F3A261EA7B700B7A922 /* LSPBaseModel.swift */; };
+		85A75F69261EE93400B7A922 /* LSPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F68261EE93400B7A922 /* LSPUtils.swift */; };
+		85A75F6D261EE95400B7A922 /* LSPPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F6C261EE95400B7A922 /* LSPPermission.swift */; };
 		85CFEA58261D88BF0059E76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CFEA57261D88BF0059E76D /* Assets.xcassets */; };
 		85CFEA5B261D88BF0059E76D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CFEA59261D88BF0059E76D /* LaunchScreen.storyboard */; };
 		E2910BB0A99203077DA6C74C /* Pods_WOSoftLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6151CA1EC0B8FFC2298C2FA9 /* Pods_WOSoftLife.framework */; };
@@ -61,7 +62,6 @@
 		85739E29261DA165002CE01C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85739E2A261DA165002CE01C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		85739E2F261DA1D8002CE01C /* LSPExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPExtension.swift; sourceTree = "<group>"; };
-		85739E33261DA213002CE01C /* LSPUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPUtils.swift; sourceTree = "<group>"; };
 		85739E46261DA37A002CE01C /* LSPBaseModuleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPBaseModuleVC.swift; sourceTree = "<group>"; };
 		85739E47261DA37A002CE01C /* LSPMainTabBarMoudleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPMainTabBarMoudleVC.swift; sourceTree = "<group>"; };
 		85739E48261DA37A002CE01C /* LSPNavigationModuleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPNavigationModuleVC.swift; sourceTree = "<group>"; };
@@ -87,6 +87,8 @@
 		85A75F32261EA54900B7A922 /* LSPAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPAPI.swift; sourceTree = "<group>"; };
 		85A75F36261EA61F00B7A922 /* LSPMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPMessage.swift; sourceTree = "<group>"; };
 		85A75F3A261EA7B700B7A922 /* LSPBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPBaseModel.swift; sourceTree = "<group>"; };
+		85A75F68261EE93400B7A922 /* LSPUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPUtils.swift; sourceTree = "<group>"; };
+		85A75F6C261EE95400B7A922 /* LSPPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPPermission.swift; sourceTree = "<group>"; };
 		85CFEA4B261D88BE0059E76D /* WOSoftLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WOSoftLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CFEA57261D88BF0059E76D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85CFEA5A261D88BF0059E76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		85739DFE261D9AB6002CE01C /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				85A75F67261EE91000B7A922 /* Utils */,
 				85A75F25261EA2CE00B7A922 /* NetWork */,
 				85739E2E261DA1B3002CE01C /* Extension */,
 				85739DFF261D9AD2002CE01C /* Macros */,
@@ -206,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				85739E2F261DA1D8002CE01C /* LSPExtension.swift */,
-				85739E33261DA213002CE01C /* LSPUtils.swift */,
 				85A75F2C261EA48300B7A922 /* LSPHud.swift */,
 				85A75F2F261EA4F000B7A922 /* LSPSaveFiles.swift */,
 			);
@@ -361,6 +363,15 @@
 				85A75F3A261EA7B700B7A922 /* LSPBaseModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		85A75F67261EE91000B7A922 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				85A75F68261EE93400B7A922 /* LSPUtils.swift */,
+				85A75F6C261EE95400B7A922 /* LSPPermission.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		85CFEA42261D88BE0059E76D = {
@@ -518,6 +529,7 @@
 				85739E23261DA01D002CE01C /* LSPTriangleLayer.swift in Sources */,
 				85739E88261DAADE002CE01C /* LSPMessageListCell.swift in Sources */,
 				85739E7C261DA82A002CE01C /* LSPBannerCycleView.swift in Sources */,
+				85A75F6D261EE95400B7A922 /* LSPPermission.swift in Sources */,
 				85A75F3B261EA7B700B7A922 /* LSPBaseModel.swift in Sources */,
 				85A75F2A261EA38800B7A922 /* MoyaConfig.swift in Sources */,
 				85739E8B261DAB8D002CE01C /* LSPMineModuleVC.swift in Sources */,
@@ -543,9 +555,9 @@
 				85739E30261DA1D8002CE01C /* LSPExtension.swift in Sources */,
 				85739E85261DAAB3002CE01C /* LSPMessageModuleVC.swift in Sources */,
 				85739E26261DA053002CE01C /* LSPWaveLayer.swift in Sources */,
-				85739E34261DA213002CE01C /* LSPUtils.swift in Sources */,
 				85739E20261D9FE6002CE01C /* LSPRectangleLayer.swift in Sources */,
 				85739E05261D9B0C002CE01C /* LSPMacros.swift in Sources */,
+				85A75F69261EE93400B7A922 /* LSPUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
