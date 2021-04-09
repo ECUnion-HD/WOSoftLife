@@ -84,7 +84,7 @@ class LSPMessageListCell: LSPBaseTableViewCell {
         iconImg.image = UIImage(named: model.getString(dic: model, key: "icon"))
         timeLbl.text = model.getString(dic: model, key: "time")
         // 自适应宽度
-        let timeWidth: CGFloat = LSPUtils().calculateWidthForLabel(label: timeLbl, height: 20)
+        let timeWidth: CGFloat = LSPUtils.calculateWidthForLabel(label: timeLbl, height: 20)
         timeLbl.snp.remakeConstraints { (make) in
             make.size.equalTo(CGSize(width: timeWidth+1, height: 20))
             make.right.equalToSuperview().offset(-15)
@@ -98,7 +98,7 @@ class LSPMessageListCell: LSPBaseTableViewCell {
         }
         contentLbl.text = model.getString(dic: model, key: "content")
         // 自适应高度
-        var contentHeight: CGFloat = LSPUtils().calculateHeightForLabel(label: contentLbl, width: Screen_Width-110)
+        var contentHeight: CGFloat = LSPUtils.calculateHeightForLabel(label: contentLbl, width: Screen_Width-110)
         if contentHeight>40{
             contentHeight=40
         }

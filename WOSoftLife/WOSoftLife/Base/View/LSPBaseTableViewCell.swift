@@ -25,9 +25,9 @@ class LSPBaseTableViewCell: UITableViewCell {
         self.basicStyle()
         self.setupView()
     }
-    
+
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
     
     override func prepareForReuse() {
@@ -40,9 +40,9 @@ class LSPBaseTableViewCell: UITableViewCell {
 
     /// 基础设置
     func basicStyle() {
+        self.selectionStyle = .none
         self.cellHeight  = 55
         self.height = self.cellHeight
-        self.selectionStyle = .none
     }
     
     /// 创建视图

@@ -35,6 +35,7 @@
 		85739E91261DABEF002CE01C /* LSPSpringTableHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E90261DABEF002CE01C /* LSPSpringTableHeadView.swift */; };
 		85739E98261DACD5002CE01C /* LSPNewsListIndexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E97261DACD5002CE01C /* LSPNewsListIndexVC.swift */; };
 		85739E9B261DACF4002CE01C /* LSPNewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85739E9A261DACF4002CE01C /* LSPNewsListCell.swift */; };
+		858F4C5F261FE27800003EAD /* LSPFeedBackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858F4C5E261FE27800003EAD /* LSPFeedBackCell.swift */; };
 		85A75F27261EA31300B7A922 /* LSPNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F26261EA31300B7A922 /* LSPNetWork.swift */; };
 		85A75F2A261EA38800B7A922 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F29261EA38800B7A922 /* MoyaConfig.swift */; };
 		85A75F2D261EA48300B7A922 /* LSPHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A75F2C261EA48300B7A922 /* LSPHud.swift */; };
@@ -80,6 +81,7 @@
 		85739E90261DABEF002CE01C /* LSPSpringTableHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPSpringTableHeadView.swift; sourceTree = "<group>"; };
 		85739E97261DACD5002CE01C /* LSPNewsListIndexVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPNewsListIndexVC.swift; sourceTree = "<group>"; };
 		85739E9A261DACF4002CE01C /* LSPNewsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPNewsListCell.swift; sourceTree = "<group>"; };
+		858F4C5E261FE27800003EAD /* LSPFeedBackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPFeedBackCell.swift; sourceTree = "<group>"; };
 		85A75F26261EA31300B7A922 /* LSPNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPNetWork.swift; sourceTree = "<group>"; };
 		85A75F29261EA38800B7A922 /* MoyaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
 		85A75F2C261EA48300B7A922 /* LSPHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSPHud.swift; sourceTree = "<group>"; };
@@ -340,6 +342,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		858F4C5C261FE23F00003EAD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				858F4C5D261FE25100003EAD /* Cells */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		858F4C5D261FE25100003EAD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				858F4C5E261FE27800003EAD /* LSPFeedBackCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		85A75F25261EA2CE00B7A922 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +417,7 @@
 				85739DF2261D98EA002CE01C /* Base */,
 				85739DFE261D9AB6002CE01C /* Expand */,
 				85739DF3261D98FC002CE01C /* Modules */,
+				858F4C5C261FE23F00003EAD /* Common */,
 				85CFEA57261D88BF0059E76D /* Assets.xcassets */,
 				85CFEA59261D88BF0059E76D /* LaunchScreen.storyboard */,
 				85CFEA5C261D88BF0059E76D /* Info.plist */,
@@ -529,6 +548,7 @@
 				85739E23261DA01D002CE01C /* LSPTriangleLayer.swift in Sources */,
 				85739E88261DAADE002CE01C /* LSPMessageListCell.swift in Sources */,
 				85739E7C261DA82A002CE01C /* LSPBannerCycleView.swift in Sources */,
+				858F4C5F261FE27800003EAD /* LSPFeedBackCell.swift in Sources */,
 				85A75F6D261EE95400B7A922 /* LSPPermission.swift in Sources */,
 				85A75F3B261EA7B700B7A922 /* LSPBaseModel.swift in Sources */,
 				85A75F2A261EA38800B7A922 /* MoyaConfig.swift in Sources */,

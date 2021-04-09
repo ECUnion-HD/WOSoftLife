@@ -38,15 +38,27 @@ class LSPBaseFormViewCell: UITableViewCell {
     var verifyBlock: LSPVerifyBlock!
     
     // MARK: 初始化相关
-//    init(withKey key: String) {
-//        super.init()
-//    }
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.basicStyle()
+        self.setupView()
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func midInit() {
+    func initWithKey(key: String) -> Self {
+        self.key = key
+        basicStyle()
+        return self
+    }
+}
+
+@objc extension LSPBaseFormViewCell {
+
+    /// 基础设置
+    func basicStyle() {
         self.selectionStyle = .none
         self.cellHeight  = 55
         self.height = self.cellHeight
@@ -54,4 +66,14 @@ class LSPBaseFormViewCell: UITableViewCell {
         self.isRequire = true
         self.fieldLength = 20
     }
+    
+    /// 创建视图
+    func setupView() {
+    }
+    
+    /// 数据处理
+    func setModel(model: Dictionary<String, Any>) -> CGFloat {
+        return 55;
+    }
 }
+
